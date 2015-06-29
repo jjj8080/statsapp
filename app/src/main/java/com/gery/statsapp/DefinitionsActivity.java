@@ -16,7 +16,7 @@ public class DefinitionsActivity extends Activity
 	private ListView listView;
 	ArrayAdapter<String> adapter;
 	String [] definitions = {"Linear regression","Poisson regression","Cox regression","1-sample t-test","Wilcoxon sign rank (for one sample)","Wilcoxon sign rank (for paired measurements)","Paired-samples t-test","2-samples t-test",
-			"Mann-Whitney U/2-samples Wilcoxon test)","ANOVA","Kruskal Wallis ANOVA","B-A Limits of agreement","ICC","Kappa","Weighted Kappa","Chi squared (x2) for trend","Chi squared (x2)","McNemar’s","Fisher’s exact","Binary logistic regression ","Ordinal logistic regression","Multinomial logistic regression"};
+			"Mann-Whitney U/2-samples Wilcoxon test)","ANOVA","Kruskal Wallis ANOVA","B-A Limits of agreement","ICC","Kappa","Weighted Kappa","Chi squared (x2) for trend","Chi squared (x2)","McNemar's","Fisher's exact","Binary logistic regression ","Ordinal logistic regression","Multinomial logistic regression"};
 	
 	
 	String [] data = {"<b>Definition:</b><br/>" +
@@ -49,9 +49,9 @@ public class DefinitionsActivity extends Activity
 								
 						" <b>Definition:</b> <br/>" +
 										"Cox regression analysis (aka cox proportional hazards regression, time-to-event, or survival analysis) is used to assess the association between one or more predictor variables and a single time-to-event outcome. " +
-										"<br/><br/>The key to time-to-event/survival analysis is that people/cases in the sample are followed for different lengths of time, and at the end of the study or at the time each person leaves the study (whichever occurs first) the individual/case may or may not have experienced the ‘event’ of interest. Individuals who do not experience the event before exiting the study are known as censored observations." +
+										"<br/><br/>The key to time-to-event/survival analysis is that people/cases in the sample are followed for different lengths of time, and at the end of the study or at the time each person leaves the study (whichever occurs first) the individual/case may or may not have experienced the event of interest. Individuals who do not experience the event before exiting the study are known as censored observations." +
 						"<br/><br/><b>Example:</b> <br/>" +
-										"A study was conducted to examine first tooth loss in relation to the age of the child, gender, and ethnicity. Tooth loss was the ‘event’ of interest. Children aged five years were recruited during a two year period and were followed for between one month and two years. At the end of the study 65% of the children had lost their first tooth and the remaining 35% had not by the time they exited the study." +
+										"A study was conducted to examine first tooth loss in relation to the age of the child, gender, and ethnicity. Tooth loss was the event of interest. Children aged five years were recruited during a two year period and were followed for between one month and two years. At the end of the study 65% of the children had lost their first tooth and the remaining 35% had not by the time they exited the study." +
 						"<br/><br/><b>Data Checks:</b><br/>" +
 										"Outcome variable must be time to an event or to leaving the study, some events must be unobserved." +
 										"<br/><br/>Residuals should be normally distributed" +
@@ -67,7 +67,7 @@ public class DefinitionsActivity extends Activity
 										"<br/><br/>Kaplan Meier plots",
 									
 						" <b>Definition:</b> <br/>" +
-										"The 1-sample t-test is used when you have a single sample of data and you want to see if it is significantly different from a particular value (referred to as the hypothesised mean or value – usually derived from literature, professional practice, or expert opinion)" +
+										"The 1-sample t-test is used when you have a single sample of data and you want to see if it is significantly different from a particular value (referred to as the hypothesised mean or value usually derived from literature, professional practice, or expert opinion)" +
 										"<br/><br/>The important feature of the 1-sample t-test is that data is only available from one group (the total study sample).The comparison value/hypothesised median is a single number taken from a reliable source such as past literature, research, or clinical/scientific knowledge." +
 						"<br/><br/><b>Example:</b> <br/>" +
 										"A study was conducted to see if the mean (average) age of first pregnancy in a current sample was significantly different from the known average in 1990?" +
@@ -88,7 +88,7 @@ public class DefinitionsActivity extends Activity
 										"A study was undertaken to compare median heart rate in a sample of 10 obese adults aged 30-35 years to the known median heart rate for normal weight adults of the same age reported in a medical journal." +
 										"<br/><br/>In a different study heart rate was measured in 10 obese patients before and after an exercise intervention to see if exercise resulted in a significant increase in heart rate. " +
 						"<br/><br/><b>Data Checks:</b><br/>" +
-										"No assumptions are made about the data – data can be skew or normal and smaller sample sizes can be analysed." +
+										"No assumptions are made about the data, data can be skew or normal and smaller sample sizes can be analysed." +
 										"<br/><br/>Although there are no specific cut-offs for sample size, if you have samples of fewer than 5 people/cases, you should consider presenting the data in graphical displays and describing differences rather than trying to make statistical comparisons." +
 						"<br/><br/><b>Data summaries:</b><br/>" +
 										"Median" +
@@ -102,7 +102,7 @@ public class DefinitionsActivity extends Activity
 						"<br/><br/><b>Example:</b> <br/>" +
 										"In a further study, 10 overweight and 10 normal weight adults were one-to-one matched for height, age, sex, and socioeconomic status, and had their heart rates measured and compared within pairs to see if there was a significant difference in heart rate associated with weight status." +
 						"<br/><br/><b>Data Checks:</b><br/>" +
-										"No assumptions are made about the data – data can be skew or normal and smaller sample sizes can be analysed." +
+										"No assumptions are made about the data, data can be skew or normal and smaller sample sizes can be analysed." +
 										"<br/><br/>Although there are no specific cut-offs for sample size, if you have samples of fewer than 5 people/cases, you should consider presenting the data in graphical displays and describing differences rather than trying to make statistical comparisons." +
 						"<br/><br/><b>Data summaries:</b><br/>" +
 										"Median" +
@@ -150,7 +150,7 @@ public class DefinitionsActivity extends Activity
 						"<br/><br/><b>Example:</b> <br/>" +
 										"A study was conducted on 20 children to compare BMI between 13 children that own a computer games console and 7 children that do not, to see if BMI differs significantly between the groups." +
 						"<br/><br/><b>Data Checks:</b><br/>" +
-										"No assumptions are made about the data – data can be skewed and smaller sample sizes can be analysed." +
+										"No assumptions are made about the data, data can be skewed and smaller sample sizes can be analysed." +
 										"<br/><br/>Although there are no specific cut-offs for sample size, with samples of fewer than 5 people/cases per group, you should consider presenting the data in graphical displays and describing differences rather than trying to make statistical comparisons." +
 						"<br/><br/><b>Data summaries:</b><br/>" +
 										"Median" +
@@ -187,7 +187,7 @@ public class DefinitionsActivity extends Activity
 						"<br/><br/><b>Example:</b> <br/>" +
 										"A study is conducted to compare alcohol tolerance in five different nationalities. 35 participants from England (n=8), Japan (n=6), Australia (n=7), Mexico (n=6), and Pakistan (n=8) were given two units of alcohol; after an hour blood alcohol level was measured. Average remaining alcohol was compared between the five groups to see if group differed significantly." +
 						"<br/><br/><b>Data Checks:</b><br/>" +
-										"No assumptions are made about the data – data can be skewed and smaller sample sizes can be analysed." +
+										"No assumptions are made about the data, data can be skewed and smaller sample sizes can be analysed." +
 										"<br/><br/>Although there are no specific cut-offs for sample size, with samples of fewer than 5 people/cases per group, you should consider presenting the data in graphical displays and describing differences rather than trying to make statistical comparisons." +
 						"<br/><br/><b>Data summaries:</b><br/>" +
 										"Median" +
@@ -264,7 +264,7 @@ public class DefinitionsActivity extends Activity
 							
 						" <b>Definition:</b> <br/>" +
 										"The Chi squared for trend test is used to look at the difference/association between a binary categorical (grouping) variable and a categorical variable with three or more ordered/ordinal outcome options within a contingency table." +
-										"<br/><br/>Chi squared works by comparing the distribution of sample data in the cells of a contingency table to a table of ‘expected values’ based on chance alone." +
+										"<br/><br/>Chi squared works by comparing the distribution of sample data in the cells of a contingency table to a table of expected values based on chance alone." +
 						"<br/><br/><b>Example:</b> <br/>" +
 										"A study was conducted to see if there was an association between smoking statuses (yes/no) and self-rated life satisfaction (low, medium, or high). 100 people were asked to say whether or not they currently smoked and to rate their life satisfaction as low, medium or high. The responses were then entered into a 2x3 contingency table for analysis." +
 						"<br/><br/><b>Data Checks:</b><br/>" +
@@ -280,7 +280,7 @@ public class DefinitionsActivity extends Activity
 						" <b>Definition:</b> <br/>" +
 										"The Chi squared test is most often used to look at the difference/association between two binary categorical variables in a 2x2 contingency table. " +
 										"<br/><br/>Chi squared can also be extended to larger contingency tables that compare two categorical variables with more than two nominal outcome options." +
-										"<br/><br/>Chi squared works by comparing the distribution of observed data in a contingency table to a table of ‘expected values’ based only on chance." +
+										"<br/><br/>Chi squared works by comparing the distribution of observed data in a contingency table to a table of expected values based only on chance." +
 						"<br/><br/><b>Example:</b> <br/>" +
 										"A study was conducted to see if there was an association between smoking status (yes/no) and sex (male/female). 100 people were asked their sex and whether or not they currently smoked. Responses were entered into a 2x2 contingency table for analysis." +
 										"<br/><br/>Another study was conducted to assess the association between smoking status and working status (unemployed, part-time, full-time, self-employed, or student). 300 people reported their smoking and employment statuses and responses were entered into a 2x5 contingency table for analysis." +
@@ -295,12 +295,12 @@ public class DefinitionsActivity extends Activity
 										"2 x 2 contingency table (or k x k table if extending chi squared); exposure/group variable as rows and outcome variable as columns",
 																																						
 						" <b>Definition:</b> <br/>" +
-										"McNemar’s test is used to look at the difference/association between two paired binary categorical variables in a 2x2 table. " +
-										"<br/><br/>Pairing in the data should be presented in the contingency table; the four table cells represent the four possible outcomes from the two measurements (e.g., positive-positive, negative-negative, positive-negative, or negative-positive).<br/><br/>McNemar test assesses how much the ‘disagreeing’ cells deviate from chance disagreement." +
+										"McNemar's test is used to look at the difference/association between two paired binary categorical variables in a 2x2 table. " +
+										"<br/><br/>Pairing in the data should be presented in the contingency table; the four table cells represent the four possible outcomes from the two measurements (e.g., positive-positive, negative-negative, positive-negative, or negative-positive).<br/><br/>McNemar test assesses how much the disagreeing cells deviate from chance disagreement." +
 						"<br/><br/><b>Example:</b> <br/>" +
 										"A study was conducted to assess the difference in nickel allergy-related rash presentation before and after treatment with a new antihistamine drug. Individuals with a nickel allergy were exposed to nickel and the presence/absence of a skin rash was recorded. Then all participants were given the new drug and one hour later the presence/absence of rash was again recorded. The paired information was presented in a 2x2 table " +
 						"<br/><br/><b>Data Checks:</b><br/>" +
-										"Sample size of at least 20 in cells of the expected values 2x2 contingency table. <br/><br/>Pairing must be kept in the graphical display and analysis of data when using McNemar’s test" +
+										"Sample size of at least 20 in cells of the expected values 2x2 contingency table. <br/><br/>Pairing must be kept in the graphical display and analysis of data when using McNemar's test" +
 						"<br/><br/><b>Data summaries:</b><br/>" +
 										"Frequencies" +
 										"<br/><br/>Percentages/proportions" +
@@ -308,12 +308,12 @@ public class DefinitionsActivity extends Activity
 										"2x2 contingency table; measurement 1 as rows and measurement 2 as columns with four cells representing the four possible paired outcomes",
 																																								
 						" <b>Definition:</b> <br/>" +
-										"The Fisher’s exact test is used to look at the difference/association between two binary categorical variables in a 2x2 table. Fisher’s exact is used when categorical data assumptions are not met for the traditional chi squared test; if there are extreme proportions (below 10% or above 90%) or small sample sizes in any of the table cells." +
-										"<br/><br/>Fisher’s exact test works by taking the table marginals (the row and column totals) and finding the number of more extreme distributions for values in the table cells than the distribution/split in the observed data." +
+										"The Fisher's exact test is used to look at the difference/association between two binary categorical variables in a 2x2 table. Fisher's exact is used when categorical data assumptions are not met for the traditional chi squared test; if there are extreme proportions (below 10% or above 90%) or small sample sizes in any of the table cells." +
+										"<br/><br/>Fisher's exact test works by taking the table marginals (the row and column totals) and finding the number of more extreme distributions for values in the table cells than the distribution/split in the observed data." +
 						"<br/><br/><b>Example:</b> <br/>" +
 										"A study was conducted to assess the association between the presence of a rare childhood disease and exposure to both chickenpox and measles within a 12 month period. 367 Parents were asked to report if their child had the rare disease (yes/no) and if their child had been exposed to both chickenpox and measles in the same year (yes/no). The results were presented in a 2x2 contingency table for analysis; only small numbers of children fell into either of the yes categories with only 2% of the sample reporting yes for both. " +
 						"<br/><br/><b>Data Checks:</b><br/>" +
-										"No assumptions are made about the data – table proportions can be extreme and smaller sample sizes can be analysed." +
+										"No assumptions are made about the data table proportions can be extreme and smaller sample sizes can be analysed." +
 										"<br/><br/>Although there are no specific cut-offs for sample size, with samples of fewer than 5 people/cases, you should consider describing differences observed in the 2x2 table rather than trying to make statistical comparisons." +
 						"<br/><br/><b>Data summaries:</b><br/>" +
 										"Frequencies" +
@@ -352,7 +352,7 @@ public class DefinitionsActivity extends Activity
 						"<b>Definition:</b><br/>" +
 										"Multinomial logistic regression analysis is used to assess the association between one or more predictor variables and a single nominal categorical outcome. " +
 						"<br/><br/><b>Example:</b> <br/>" +
-										"A study was conducted to look at the associations of a number of predictor variables to an individual’s majority mode of transport to work (walk, bike, car, bus, or train). Age, socioeconomic status, number of dependents living at home, distance to workplace, and availability of a car were all used to model/predict choice of transport to work." +
+										"A study was conducted to look at the associations of a number of predictor variables to an individual's majority mode of transport to work (walk, bike, car, bus, or train). Age, socioeconomic status, number of dependents living at home, distance to workplace, and availability of a car were all used to model/predict choice of transport to work." +
 						"<br/><br/><b><b>Data Checks:</b></b><br/>" +
 										"The outcome should be a nominal (unordered) categorical variable" +
 										"<br/><br/>Residuals should be normally distributed" +

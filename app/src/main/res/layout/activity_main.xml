@@ -46,9 +46,11 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
+        android:orientation="vertical"
+        android:gravity="bottom"
         android:layout_centerVertical="true"
-        android:orientation="vertical" >
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <Button
             android:id="@+id/button1"
@@ -90,10 +92,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:gravity="center"
+        android:gravity="center|top"
         android:text="Question"
         android:layout_marginTop="10dp"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginBottom="40dp" />
 
 </RelativeLayout>
 

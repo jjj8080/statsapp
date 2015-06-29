@@ -7,7 +7,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -44,12 +44,17 @@
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="10dp"
                 android:text="Glossary"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="@color/green" />
+                android:textColor="@color/green"
+                android:textSize="22dp"
+                android:paddingLeft="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:paddingTop="8dp"
+                android:paddingRight="14dp"
+                android:paddingBottom="14dp" />
         </RelativeLayout>
 
 		<View
@@ -64,7 +69,8 @@
 		    android:layout_height="wrap_content"
 		    android:text="Medium Text"
 		    android:layout_margin="10dp"
-		    android:textAppearance="?android:attr/textAppearanceMedium" />
+		    android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginRight="12dp" />
         
     </LinearLayout>
 
