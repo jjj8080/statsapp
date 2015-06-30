@@ -250,7 +250,7 @@ public class MainActivity extends Activity {
     	{
     		questionButton.setText("Definitions");
     		buttons[0].setVisibility(View.VISIBLE);
-    		buttons[0].setText("Home");
+    		buttons[0].setText("Back to Home Page");
     	}
     	else
     	{

@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 
@@ -14,7 +13,7 @@ public class DefinitionsActivity extends Activity
 {
 
 	private ListView listView;
-	ArrayAdapter<String> adapter;
+	ColorArrayAdapter2 adapter;
 	String [] definitions = {"Linear regression","Poisson regression","Cox regression","1-sample t-test","Wilcoxon sign rank (for one sample)","Wilcoxon sign rank (for paired measurements)","Paired-samples t-test","2-samples t-test",
 			"Mann-Whitney U/2-samples Wilcoxon test)","ANOVA","Kruskal Wallis ANOVA","B-A Limits of agreement","ICC","Kappa","Weighted Kappa","Chi squared (x2) for trend","Chi squared (x2)","McNemar's","Fisher's exact","Binary logistic regression ","Ordinal logistic regression","Multinomial logistic regression"};
 	
@@ -383,7 +382,7 @@ public class DefinitionsActivity extends Activity
 	    
 	    listView = (ListView)findViewById(R.id.listView1);
 	    listView.setOnItemClickListener(onClick);
-	    adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, definitions);
+        adapter = new ColorArrayAdapter2(getApplication(), android.R.layout.simple_list_item_1, definitions);
 	    listView.setAdapter(adapter);
 	}
 	
